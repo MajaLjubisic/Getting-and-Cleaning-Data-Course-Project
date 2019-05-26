@@ -1,30 +1,18 @@
----
-title: "CodeBook"
-output: github_document
----
+CodeBook
+================
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-## GitHub Documents
+This is a CodeBook for the Getting and Cleaning Data Course Project, as a part of request:
+GitHub contains a code book that modifies and updates the available
+codebooks with the data to indicate all the variables and summaries
+calculated, along with units, and any other relevant information.
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+The relevant Data can be found at the URL in the run_analysis.R script.
 
-## Including Code
+The following steps have been conducted on the data:
 
-You can include R code in the document as follows:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Merging of the training and the test sets in order to create one merged ("merged") data set.
+The files (reading, testing, feaute, activity label) are first read to the R, and assigned to appropriately named tables.
+The data was then merged.
+Vector for defining ID, mean and standard deviation has been created, and needed subset from "merged" was formed
+Everything was labeled appropriately and an independent tidy data set was formed and written to an independentTidySet as a txt file.
